@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ScrabbleClubSystem</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="dropdown menu">
+      <li class="menu-text">Scrabble club</li>
+      <li>
+        <a href="/leader_boards">Leader Board</a>
+      </li>
+      <li>
+        <a href="/members">Member</a>
+      </li>
+      <li><a href="/matches">Match</a></li>
+    </ul>
+  </div>
+</div>
+    <%= yield %>
+  </body>
+</html>
